@@ -1,0 +1,11 @@
+CATALINA_OPTS="-Djava.awt.headless=true -Dfile.encoding=UTF-8
+-server -Xms2048m -Xmx2048m
+-XX:NewSize=256m -XX:MaxNewSize=256m -XX:PermSize=256m
+-XX:MaxPermSize=256m -XX:+DisableExplicitGC
+-Dcom.sun.management.jmxremote=true
+-Dcom.sun.management.jmxremote.port=1099
+-Dcom.sun.management.jmxremote.host=0.0.0.0
+-Dcom.sun.management.jmxremote.authenticate=true
+-Dcom.sun.management.jmxremote.access.file=/opt/tomcat8/conf/jmxremote.access
+-Dcom.sun.management.jmxremote.password.file=/opt/tomcat8/conf/jmxremote.password
+-Dcom.sun.management.jmxremote.ssl=false"
