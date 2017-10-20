@@ -34,3 +34,8 @@ chef-server-ctl reconfigure
 chef-manage-ctl reconfigure --accept-license
 
 sudo chef-server-ctl test
+
+git clone https://github.com/vittico/vagrant-chef.git
+cd vagrant-chef/chef/my_tomcat/
+
+chef-client --local-mode recipes/default.rb

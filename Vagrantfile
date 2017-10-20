@@ -18,6 +18,8 @@ Vagrant.configure("2") do |config|
     config.vm.provision "shell", inline: "echo Hello, World"
     config.vm.network "forwarded_port", guest: 80, host: 80
     config.vm.network "forwarded_port", guest: 443, host: 443
+    config.vm.network "forwarded_port", guest: 8080, host: 8080
+    config.vm.network "forwarded_port", guest: 1099, host: 1099
   end
 
 end
